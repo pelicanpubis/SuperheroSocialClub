@@ -1,4 +1,19 @@
 ﻿@page
+@* @using SuperheroSocialClub.Database *@
 @model SuperheroSocialClub.Pages.Superheroes.IndexModel
 @{
+}
+
+
+<h1>All Superheroes</h1>
+<hr />
+
+@foreach (var superhero in Model.Superheroes)
+{
+    <img class="picture-size" src="@superhero.Image" alt="Picture of @superhero.Name" />
+    <h2>@superhero.Name</h2>
+    <h3>Secret Identity: @superhero.SecretIdentity</h3>
+    <h3>Superpower: @superhero.Superpower</h3>
+    <a class="btn btn-danger" asp-page="/Superheroes/Update" asp-route-id="@superhero.Id">Update</a>
+    <hr />
 }
