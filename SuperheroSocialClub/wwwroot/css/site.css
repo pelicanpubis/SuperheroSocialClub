@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.picture-size {
+    height: 300px;
+}
