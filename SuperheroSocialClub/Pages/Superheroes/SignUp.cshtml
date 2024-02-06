@@ -2,3 +2,23 @@
 @model SuperheroSocialClub.Pages.Superheroes.SignUpModel
 @{
 }
+
+<form method="post">
+
+
+
+    <label>Superhero name:</label>
+    <input type="text" placeholder="Namn" asp-for="@Model.Name" />
+
+    <label>Secret Identity:</label>
+    <input type="text" placeholder="SecretIdentity" asp-for="@Model.SecretIdentity"/>
+    
+    <label>Superpower:</label>
+    <input type="text" placeholder="Superpower" asp-for="@Model.Superpower"/>
+
+    <label>Superpower:</label>
+    <input type="text" placeholder="Image" asp-for="@Model.Image" />
+
+    <input class="btn btn-danger" type="submit" value="Sign up" />
+
+</form>
