@@ -6,8 +6,9 @@
 
 
 <h1>All Superheroes</h1>
+<a class="btn btn-primary" style="margin-left: 10px;" asp-page="/Superheroes/SignUp">Add new Superhero!</a>
+
 <hr />
-<a class="btn btn-primary" asp-page="/Superheroes/SignUp">Add new Superhero!</a>
 
 
 @foreach (var superhero in Model.Superheroes)
@@ -16,6 +17,13 @@
     <h2>@superhero.Name</h2>
     <h3>Secret Identity: @superhero.SecretIdentity</h3>
     <h3>Superpower: @superhero.Superpower</h3>
+
+    <div class="button-container">
     <a class="btn btn-danger" asp-page="/Superheroes/Update" asp-route-id="@superhero.Id">Update</a>
+    <form method="post" asp-page-handler="Delete" asp-route-id="@superhero.Id">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    </div>
+
     <hr />
 }
