@@ -21,5 +21,6 @@
             Superpower = superpower;
             Image = image;
         }
+
     }
 }

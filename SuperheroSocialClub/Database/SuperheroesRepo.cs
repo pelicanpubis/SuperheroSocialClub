@@ -21,5 +21,7 @@ namespace SuperheroSocialClub.Database
                 superhero.Superpower = updateSuperhero.Superpower;
             }
         }
+
+     
     }
 }
