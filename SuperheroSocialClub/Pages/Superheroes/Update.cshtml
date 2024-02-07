@@ -13,9 +13,10 @@ else
 {
     <img class="picture-size" src="@Model.Superhero.Image" alt="Image of @Model.Superhero.Name"/>
     <form method="post">
-        <input type="text" placeholder="Name" asp-for="@Model.Superhero.Name"/>
-        <input type="text" placeholder="Secret Identity" asp-for="@Model.Superhero.SecretIdentity" />
-        <input type="text" placeholder="Superpower" asp-for="@Model.Superhero.Superpower" />
+        <input type="hidden" asp-for="Superhero.Id" />
+        <input type="text" placeholder="Name" asp-for="Superhero.Name"/>
+        <input type="text" placeholder="Secret Identity" asp-for="Superhero.SecretIdentity" />
+        <input type="text" placeholder="Superpower" asp-for="Superhero.Superpower" />
 
         <input class="btn btn-primary" type="submit" value="Update Superhero" />
     </form>
