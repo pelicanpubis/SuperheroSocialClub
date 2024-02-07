@@ -24,3 +24,16 @@ body {
 .picture-size {
     height: 300px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 10px; 
+}
+
+    .button-container .btn {
+        margin-right: 10px; /* mellanrum mellan knapparna */
+    }
+
+
+

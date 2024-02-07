@@ -38,23 +38,13 @@ namespace SuperheroSocialClub.Pages.Superheroes
 
                 SuperheroModel newSuperhero = new SuperheroModel(
                    Id,
-                     Name,
-                  SecretIdentity,
+                   Name,
+                   SecretIdentity,
                    Superpower,
                    Image
                       );
 
 
-                //SuperheroModel newSuperhero = new SuperheroModel()
-                //(
-                //   //Id = Superheroes.Count +1 ,
-                //   //Name = Name,
-                //   //SecretIdentity = SecretIdentity,
-                //   //Superpower = Superpower,
-                //   //Image = Image
-
-
-                //);
 
                 SuperheroesRepo.Superheroes.Add(newSuperhero);
 

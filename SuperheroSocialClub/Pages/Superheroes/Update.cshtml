@@ -18,7 +18,14 @@ else
         <input type="text" placeholder="Superpower" asp-for="@Model.Superhero.Superpower" />
 
         <input class="btn btn-primary" type="submit" value="Update Superhero" />
+        <a class="btn btn-primary" asp-page="/Superheroes/Index">Go back to all Superheroes!</a>
+
     </form>
+
+    <hr />
+
+
+
 
     @if(TempData["Message"] != null)
     {
