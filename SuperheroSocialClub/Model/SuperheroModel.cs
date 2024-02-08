@@ -12,6 +12,10 @@
 
         public string? Image { get; set; }
 
+        public SuperheroModel()
+        {
+
+        }
 
         public SuperheroModel(int id, string name, string secretIdentity, string superpower, string image)
         {
